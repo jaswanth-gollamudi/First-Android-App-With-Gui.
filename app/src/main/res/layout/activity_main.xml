@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_image" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="338dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/image1" />
+
+    <EditText
+
+        android:id="@+id/input"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:hint="          Input-A"
+        android:inputType="number|numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <EditText
+
+        android:id="@+id/input1"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:hint="          Input-B"
+        android:inputType="number|numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/input"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <EditText
+
+        android:id="@+id/input2"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:hint="          Input-C"
+        android:inputType="number|numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input1"
+        app:layout_constraintStart_toStartOf="@+id/input1"
+        app:layout_constraintTop_toBottomOf="@+id/input1"
+        app:layout_constraintVertical_bias="0.397" />
+
+    <TextView
+
+        android:id="@+id/output"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:background="@drawable/custom_output"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:hint="          Output"
+        android:textColor="#151414"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712" />
+
+    <Button
+        android:id="@+id/calc1"
+        android:layout_width="53dp"
+        android:layout_height="61dp"
+        android:background="@drawable/custom_calcbutton"
+        android:onClick="addnumbers"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <Button
+        android:id="@+id/calc2"
+        android:layout_width="53dp"
+        android:layout_height="61dp"
+        android:background="@drawable/custom_calcbutton"
+        android:onClick="Divnumbers"
+        android:text="%"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
