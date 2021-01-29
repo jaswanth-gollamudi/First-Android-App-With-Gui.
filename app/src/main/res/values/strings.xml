@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Testcase</string>
+    <string name="Input">Input-A</string>
+    <string name="InputB">Input-B</string>
+    <string name="InputC">Input-C</string>
+    <string name="Output">Output</string>
 </resources>

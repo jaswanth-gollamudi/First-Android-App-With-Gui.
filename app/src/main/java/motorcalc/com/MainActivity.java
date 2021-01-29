@@ -10,35 +10,35 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-     EditText inedittext,inedittext1,inedittext2;
-     TextView ouedittext;
-     Button AddButton,DivButton;
+     EditText inEdittext,inEdittext1,inEdittext2;
+     TextView ouEdittext;
+     Button addButton,divButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        inedittext = findViewById(R.id.input);
-        inedittext1 = findViewById(R.id.input1);
-        inedittext2 = findViewById(R.id.input2);
-        ouedittext=findViewById(R.id.output);
-        AddButton=findViewById(R.id.calc1);
-        DivButton=findViewById(R.id.calc2);
+        inEdittext = findViewById(R.id.input);
+        inEdittext1 = findViewById(R.id.input1);
+        inEdittext2 = findViewById(R.id.input2);
+        ouEdittext=findViewById(R.id.output);
+        addButton=findViewById(R.id.calc1);
+        divButton=findViewById(R.id.calc2);
 
     }
-    public void addnumbers(View v){
+    public void addNumbers(View v){
         double n1,n2,n3,result;
-        n1 = Double.parseDouble(inedittext.getText().toString());
-        n2 = Double.parseDouble(inedittext1.getText().toString());
+        n1 = Double.parseDouble(inEdittext.getText().toString());
+        n2 = Double.parseDouble(inEdittext1.getText().toString());
         result = n1+n2;
-        ouedittext.setText(String.format("sum : %.2f", result));
+        ouEdittext.setText(String.format("%.2f", result));
     }
-    public void Divnumbers(View v){
+    public void divNumbers(View v){
         double n1,n2,n3,result1;
-        n3 = Double.parseDouble(inedittext2.getText().toString());
-        n2 = Double.parseDouble(inedittext1.getText().toString());
+        n3 = Double.parseDouble(inEdittext2.getText().toString());
+        n2 = Double.parseDouble(inEdittext1.getText().toString());
         result1 = n2/n3;
-        ouedittext.setText(String.format("Rem : %.2f", result1));
+        ouEdittext.setText(String.format("%.2f", result1));
     }
 }
