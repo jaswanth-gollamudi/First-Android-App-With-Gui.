@@ -12,7 +12,7 @@ Using Fonts,drawable, Strings.xml, colors.xml, constraint layout.
 Adding Background to button.
 
 
-Can be used as a starter program to learn basic and implement an App.
+Can be used as a starter program to learn basics and implement an App.
 
 
 
